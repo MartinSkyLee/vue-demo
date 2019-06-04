@@ -53,7 +53,7 @@ export default {
     };
   },
   mounted() {
-    // var that = this
+    // var that = this //在then的内部不能使用Vue的实例化的this,因为在内部this没有被绑定。
     axios
       .get("http://10.9.53.103:5200/api/CompanyManager/GetCompanyList?Sidx=name")
       // .then(function(response) {
@@ -61,7 +61,7 @@ export default {
       //   that.msg = response.data
       // })
       .then(response => {
-        this.msg = response.data.data[0];
+        this.msg = response.data.data[0];//用ES6箭头函数，箭头方法可以和父方法共享变量
       })
       .catch(function(error) {
         console.log(error);
