@@ -5,6 +5,7 @@
       <router-link to="/">主页</router-link>
       <router-link to="/data">AXIOS</router-link>
       <router-link to="/transition">TRANSITION</router-link>
+      <router-link to="/calculator">CALCULATOR</router-link>
     </div>
     <router-view/>
   </div>
@@ -27,5 +28,12 @@ export default {
 }
 .nav {
   margin: 10px;
+}
+.nav a{
+  margin: 10px;
+  text-decoration: none;
+}
+.nav .router-link-active{
+  text-decoration: none;
 }
 </style>

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import AxiosData from '@/components/AxiosData'
 import Transition from '@/components/TransitionDemo'
+import Calculator from '@/components/Calculator'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
       path:'/transition',
       name:'TransitionDemo',
       component: Transition
+    },
+    {
+      path:'/calculator',
+      component: Calculator
     }
   ]
 })
