@@ -7,7 +7,7 @@
     <p>总和：{{ sum }}</p>
     <p>{{ number }}</p>
     <button v-on:click="plus">加1</button>
-    <div v-for="(item,index) in msg" v-bind:key="item">{{index}}.编号：{{item.id}} 工号：{{item.code}} 船舶名称：{{item.name}}</div>
+    <div v-for="(item,index) in msg" v-bind:key="index">{{index}}.编号：{{item.id}} 工号：{{item.code}} 船舶名称：{{item.name}}</div>
     <!-- Vue 2.2.0+的版本里，当在组件中使用v-for时，v-bind:key是必须的。 -->
     <p v-html="name"></p>
     <a v-bind:href="link" target="_blank">百度地图</a>
