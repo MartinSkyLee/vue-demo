@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import GetData from '@/components/GetData'
+import AxiosData from '@/components/AxiosData'
 
 Vue.use(Router)
 
@@ -14,8 +14,8 @@ export default new Router({
     },
     {
       path:'/data',
-      name:'GetData',
-      component: GetData
+      name:'AxiosData',
+      component: AxiosData
     }
   ]
 })

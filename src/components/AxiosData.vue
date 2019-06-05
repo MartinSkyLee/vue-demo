@@ -8,7 +8,7 @@
 import axios from "axios";
 
 export default {
-  name: "GetData",
+  name: "AxiosData",
   data() {
     return {
       msg: null
